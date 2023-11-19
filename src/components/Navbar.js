@@ -4,8 +4,8 @@ function Navbar(){
     <div>
        
 
-<NavLink to="/botcollection">BotCollection</NavLink> |
-<NavLink to="/mybotarmy">MyBotArmy</NavLink> 
+<NavLink to="/botcollection"><button>BotCollection</button></NavLink>
+ 
     </div>
   )
 }
