@@ -13,6 +13,7 @@ function BotCard({ bot, onEnlistClick ,isEnlisted}) {
         <div className="dataItem">🛡️: {bot.armor}</div>
         <div className="dataItem">⚡: {bot.damage}</div>
       </div>
+      {/* if enlisted is true it will not display the button and if false it will display */}
       {isEnlisted ? null: (
         <button onClick={() => onEnlistClick(bot)}>Enlist</button>
       )}

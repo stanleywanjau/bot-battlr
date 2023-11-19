@@ -15,6 +15,7 @@ function YourBotArmy({ army, onReleaseClick, onDischargeClick }) {
         <div key={bot.id}>
           <button onClick={() => onReleaseClick(bot)}>Release</button>
           <button onClick={() => onDischargeClick(bot)}>X</button>
+          {/* isEnlisted is passed as true so that it will not display the button  */}
           <BotCard bot={bot}  isEnlisted={true}/>
         </div>
       ))}

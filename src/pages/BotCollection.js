@@ -19,6 +19,7 @@ function BotCollection() {
   if (!isLoading) {
     return <h3>Loading...</h3>;
   }
+  //check if the bot is already listed in yourbots 
   const isBotEnlisted = (bot) => {
     const enlisted = army.some((armyBot) => armyBot.id === bot.id);
     console.log(`${bot.name} is enlisted: ${enlisted}`);
